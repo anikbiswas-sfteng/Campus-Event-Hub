@@ -1,0 +1,24 @@
+{
+  "name": "college-event-manager-server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server.js",
+    "start": "node server.js",
+    "seed": "node scripts/seed.js",
+    "check": "node --check server.js && node --check config/db.js && node --check models/*.js && node --check middleware/*.js && node --check controllers/*.js && node --check routes/*.js && node --check scripts/seed.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.0",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
